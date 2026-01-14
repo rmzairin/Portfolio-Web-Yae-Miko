@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinigami - Yae Miko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SHINIGAMI</div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#education" class="nav-link" data-section="education">Education</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#project" class="nav-link" data-section="project">Project</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <!-- Floating decorations -->
+        <div class="floating-decorations">
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="sakura sakura-1">🌸</div>
+            <div class="sakura sakura-2">🌸</div>
+            <div class="sakura sakura-3">🌸</div>
+        </div>
+
+        <div class="container text-center">
+            <div class="profile-wrapper">
+                <div class="profile-img">
+                    <img src="img/yae-miko.jpg" alt="Profile">
+                </div>
+                <div class="sparkle sparkle-1">✨</div>
+                <div class="sparkle sparkle-2">⭐</div>
+            </div>
+            <h1 class="hero-title">Hello, I'm Shinigami</h1>
+            <p class="hero-subtitle">Full Stack Developer | Designer | Creative Thinker</p>
+            <button class="btn-primary" onclick="scrollToSection('contact')">Get In Touch</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="decorations">
+            <div class="deco-emoji deco-1">💫</div>
+            <div class="deco-emoji deco-2">🎨</div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="card about-card">
+                    <div class="about-img-wrapper">
+                        <img src="img/yae.jpg" 
+                             alt="Anime character" class="about-img">
+                        <div class="heart-emoji">💝</div>
+                    </div>
+                    <h3 class="card-title">Who I Am</h3>
+                    <p class="card-text">
+                        I'm a passionate developer with a love for creating beautiful and functional web experiences. 
+                        With expertise in modern web technologies, I bring ideas to life through clean code and elegant design.
+                    </p>
+                    <p class="card-text">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                        or enjoying a good cup of coffee while sketching new design ideas.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-emoji">🎨</div>
+                        <p class="skill-name">HTML/CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-emoji">⚡</div>
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-emoji">⚛️</div>
+                        <p class="skill-name">React</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-emoji">🟢</div>
+                        <p class="skill-name">Node.js</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-emoji">🐍</div>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-emoji">✨</div>
+                        <p class="skill-name">UI/UX Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="card timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                            <p class="timeline-subtitle">University Name</p>
+                        </div>
+                        <span class="timeline-year">2019 - 2023</span>
+                    </div>
+                    <p class="card-text">Focused on software engineering and web development. Graduated with honors.</p>
+                </div>
+                <div class="card timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">High School Diploma</h3>
+                            <p class="timeline-subtitle">High School Name</p>
+                        </div>
+                        <span class="timeline-year">2016 - 2019</span>
+                    </div>
+                    <p class="card-text">Specialized in Science and Mathematics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="card timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Senior Frontend Developer</h3>
+                            <p class="timeline-subtitle">Tech Company Inc.</p>
+                        </div>
+                        <span class="timeline-year">2023 - Present</span>
+                    </div>
+                    <p class="card-text">Leading frontend development team, building scalable web applications using React and modern technologies.</p>
+                </div>
+                <div class="card timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Web Developer</h3>
+                            <p class="timeline-subtitle">Digital Agency</p>
+                        </div>
+                        <span class="timeline-year">2021 - 2023</span>
+                    </div>
+                    <p class="card-text">Developed responsive websites and web applications for various clients across different industries.</p>
+                </div>
+                <div class="card timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Junior Developer</h3>
+                            <p class="timeline-subtitle">Startup XYZ</p>
+                        </div>
+                        <span class="timeline-year">2020 - 2021</span>
+                    </div>
+                    <p class="card-text">Assisted in developing and maintaining company web platforms and internal tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="section">
+        <div class="decorations">
+            <div class="deco-emoji deco-3">🎮</div>
+            <div class="deco-emoji deco-4">💻</div>
+            <div class="deco-emoji deco-5">🚀</div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/11.jpg" alt="Project">
+                        <div class="project-emoji">🛍️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-tech">React, Node.js, MongoDB</p>
+                        <p class="project-desc">Full-stack e-commerce solution with payment integration and admin dashboard.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/22.jpg" alt="Project">
+                        <div class="project-emoji">🎨</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-tech">React, Tailwind CSS</p>
+                        <p class="project-desc">Modern and responsive portfolio website with smooth animations.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/33.jpg" alt="Project">
+                        <div class="project-emoji">✅</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-tech">React, Firebase</p>
+                        <p class="project-desc">Collaborative task management application with real-time updates.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/44.jpg" alt="Project">
+                        <div class="project-emoji">🌤️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-tech">JavaScript, API Integration</p>
+                        <p class="project-desc">Interactive weather dashboard with forecasts and beautiful UI.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/55.jpg" alt="Project">
+                        <div class="project-emoji">📝</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Platform</h3>
+                        <p class="project-tech">Next.js, Markdown</p>
+                        <p class="project-desc">Static blog platform with SEO optimization and fast performance.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/66.jpg" alt="Project">
+                        <div class="project-emoji">💬</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Chat Application</h3>
+                        <p class="project-tech">React, Socket.io</p>
+                        <p class="project-desc">Real-time chat application with rooms and private messaging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="decorations">
+            <div class="deco-emoji deco-6">💌</div>
+            <div class="deco-emoji deco-7">✉️</div>
+            <div class="deco-emoji deco-8">📱</div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="card contact-card">
+                <div class="contact-img-wrapper">
+                    <img src="img/kontak.jpg" 
+                         alt="Contact" class="contact-img">
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">your.email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">+62 123 4567 8901</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="return handleSubmit(event)">
+                        <input type="text" placeholder="Your Name ✨" class="form-input" required>
+                        <input type="email" placeholder="Your Email 📧" class="form-input" required>
+                        <textarea placeholder="Your Message 💭" rows="4" class="form-input" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message 💌</button>
+                    </form>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Portfolio. Made with Shinigami❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
